@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex:25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.col img{
+    margin-top: 8px;
+    vertical-align: calc();
+    width: 100%;
+}
+
+@media  screen and (max-width:800px) {
+    .col{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media  screen and (max-width:600px) {
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
